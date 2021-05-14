@@ -22,7 +22,7 @@ function sayHello() {
   }
 }
 
-function clear() {
+function clearText() {
   let number = enter.value;
   let name = enterName.value;
   if (number === "" || number < 7) {
@@ -34,10 +34,10 @@ function clear() {
 }
 
 submit.addEventListener("click", sayHello);
-enter.addEventListener("blur", clear);
+enter.addEventListener("blur", clearText);
 
 submitName.addEventListener("click", sayHello);
-enterName.addEventListener("blur", clear);
+enterName.addEventListener("blur", clearText);
 
 
 function getNumbers() {
