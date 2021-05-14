@@ -4,6 +4,8 @@ const hello = document.getElementById("helloText");
 const enterName = document.getElementById("enterName");
 const submitName = document.getElementById("submitName");
 const helloName = document.getElementById("helloName");
+const btn = document.getElementById("btn");
+const numbers = document.getElementById("numbers");
 
 function sayHello() {
   let number = enter.value;
@@ -36,3 +38,17 @@ enter.addEventListener("blur", clear);
 
 submitName.addEventListener("click", sayHello);
 enterName.addEventListener("blur", clear);
+
+
+function getNumbers() {
+  const arr =  Array(50).fill().map(() => Math.round(Math.random() * 99));
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 3 === 0) {
+      newArr.push(arr[i]);
+    }
+  }
+  numbers.textContent = `[${newArr}]`;
+}
+
+btn.addEventListener("click", getNumbers);
