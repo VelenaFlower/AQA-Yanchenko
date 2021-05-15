@@ -8,6 +8,6 @@ public class Main {
         solution2.sayHelloName();
 
         Task3 solution3 = new Task3();
-        solution3.getNumbers();
+        solution3.printList();
     }
 }
