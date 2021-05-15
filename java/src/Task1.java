@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.Scanner;
 
 public class Task1 {
@@ -10,7 +8,7 @@ public class Task1 {
         int number = scan.nextInt();
 
         if (number > 7) {
-        System.out.println("Привет");
+            System.out.println("Привет");
         }
     }
 }

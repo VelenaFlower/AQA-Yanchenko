@@ -1,5 +1,3 @@
-package com.company;
-
 public class Task3 {
 
     public void getNumbers() {
